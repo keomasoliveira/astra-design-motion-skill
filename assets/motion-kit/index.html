@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Astra Motion Kit · Disclosure e microinterações</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./menu.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Astra Motion Kit, início">
+        <span class="wordmark-symbol" aria-hidden="true">A</span>
+        <span>astra <small>motion kit</small></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a class="header-link" href="#principios">Princípios</a>
+
+        <div class="disclosure" data-disclosure>
+          <button
+            class="disclosure-trigger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="explorar-painel"
+            data-disclosure-trigger
+          >
+            Explorar
+            <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="m3.5 6 4.5 4 4.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="disclosure-panel" id="explorar-painel" data-disclosure-panel inert>
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Três movimentos com uma função</span>
+                <h2>Uma interface, vários estados.</h2>
+              </div>
+              <div class="panel-tools">
+                <button class="motion-toggle" type="button" aria-pressed="false" data-motion-toggle>Pausar diagramas</button>
+                <span class="panel-index" aria-hidden="true">01 — 03</span>
+              </div>
+            </div>
+
+            <nav class="panel-grid" aria-label="Exemplos de movimento">
+              <a class="panel-card" href="#navegacao">
+                <span class="card-top"><span>01 / Navegação</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+                <svg class="card-art art-disclosure" viewBox="0 0 176 92" fill="none" aria-hidden="true">
+                  <rect x="22" y="12" width="132" height="68" rx="10" stroke="currentColor" stroke-width="1.5" />
+                  <path class="art-line" d="M37 32H95" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                  <path d="M37 48H139M37 59H116" stroke="currentColor" stroke-opacity=".4" stroke-width="2" stroke-linecap="round" />
+                  <path class="art-caret" d="m126 28 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="card-bottom"><strong>Entrada e saída</strong><span>Reversível, sem perder foco.</span></span>
+              </a>
+
+              <a class="panel-card" href="#icones">
+                <span class="card-top"><span>02 / Feedback</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+                <svg class="card-art art-feedback" viewBox="0 0 176 92" fill="none" aria-hidden="true">
+                  <rect x="39" y="17" width="98" height="58" rx="29" stroke="currentColor" stroke-width="1.5" />
+                  <circle class="art-knob" cx="68" cy="46" r="18" fill="currentColor" />
+                  <path class="art-spark" d="M113 37v18M104 46h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <span class="card-bottom"><strong>Ícone com propósito</strong><span>Responde a foco e ativação.</span></span>
+              </a>
+
+              <a class="panel-card" href="#transicoes">
+                <span class="card-top"><span>03 / Ritmo</span><span class="card-arrow" aria-hidden="true">↗</span></span>
+                <svg class="card-art art-rhythm" viewBox="0 0 176 92" fill="none" aria-hidden="true">
+                  <path d="M32 70h112" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5" />
+                  <rect class="art-bar bar-a" x="44" y="41" width="15" height="29" rx="3" fill="currentColor" />
+                  <rect class="art-bar bar-b" x="70" y="24" width="15" height="46" rx="3" fill="currentColor" />
+                  <rect class="art-bar bar-c" x="96" y="33" width="15" height="37" rx="3" fill="currentColor" />
+                  <rect class="art-bar bar-d" x="122" y="48" width="15" height="22" rx="3" fill="currentColor" />
+                </svg>
+                <span class="card-bottom"><strong>Ritmo escalonado</strong><span>Uma sequência que orienta.</span></span>
+              </a>
+            </nav>
+            <p class="panel-note">Os diagramas se movem enquanto o menu está aberto. Hover e foco acrescentam feedback; Escape fecha e devolve o foco.</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title" tabindex="-1">
+        <div class="hero-copy">
+          <p class="eyebrow">Demonstração executável · HTML / CSS / JS</p>
+          <h1 id="hero-title">Movimento que <em>explica</em> a interface.</h1>
+          <p>Abra “Explorar” para observar as animações contínuas dos diagramas e o feedback de cada cartão em mouse, teclado e toque.</p>
+          <a class="hero-link" href="#principios">Ver os princípios <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-ring ring-one"></div>
+          <div class="hero-ring ring-two"></div>
+          <span>estado<br />→ resposta</span>
+          <b class="hero-orbit-dot"></b>
+        </div>
+      </section>
+
+      <section class="content-section" id="principios" tabindex="-1">
+        <p class="eyebrow">Manual em miniatura</p>
+        <h2>Cada efeito precisa de uma causa e de um fim.</h2>
+        <p>O painel usa um botão real, links reais e estados abertos e fechados. Seus diagramas demonstram processos em ciclos curtos; o hover e o foco acrescentam feedback. A informação permanece acessível sem animação.</p>
+      </section>
+
+      <section class="detail-grid" aria-label="Detalhes dos padrões">
+        <article id="navegacao" tabindex="-1"><span>01</span><h3>Navegação</h3><p>Entrada suave por opacidade e deslocamento curto. Saída interrompível, Escape e retorno de foco.</p></article>
+        <article id="icones" tabindex="-1"><span>02</span><h3>Feedback</h3><p>O mesmo sinal visual aparece em hover e foco; toque ativa o link sem depender de hover.</p></article>
+        <article id="transicoes" tabindex="-1"><span>03</span><h3>Ritmo</h3><p>Pequenos atrasos criam leitura sequencial apenas quando o cartão está em interação.</p></article>
+      </section>
+    </main>
+  </body>
+</html>
