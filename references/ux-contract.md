@@ -12,6 +12,16 @@ Antes de implementar, agrupe os controles reais da página por componente e pree
 
 Para cada animação de interface, anote **gatilho, mudança visível, duração/easing escolhido, função e estado final**. Um ícone de controle pode indicar abertura ou seleção; um diagrama pode ter loop independente do hover para explicar um processo. Nesse caso, registre quando o loop roda e pausa, e mantenha a informação legível no quadro parado. A linguagem de movimento deve pertencer à mesma direção da página, sem impedir uma ação rápida.
 
+Transforme cada linha aplicável em casos `Dado → Quando → Então` antes da revisão. **Dado** fixa estado lógico, foco, viewport e preferência de movimento; **Quando** nomeia uma ação real; **Então** define DOM/semântica, pixels finais, destino e possibilidade de continuar usando o controle. Execute os casos no navegador, não só no código. Inclua interrupção quando a animação puder ser reaberta, trocada ou cancelada durante a transição. Não imponha hover a interfaces sem ponteiro fino.
+
+| Dado | Quando | Então, observável |
+| --- | --- | --- |
+| Menu fechado, foco no acionador, teclado | Enter abre; Tab percorre; Escape fecha | `aria-expanded`, painel visível, foco e indicador concordam; links funcionam e foco retorna quando cabível. |
+| Menu em fechamento | A pessoa abre novamente antes do fim | Saída antiga é cancelada; timer ou callback atrasado não esconde o painel reaberto. |
+| Movimento reduzido ativo, mesmo conteúdo | Pessoa aciona menu ou troca seleção | Estado final e informação aparecem sem percurso intenso; foco, conteúdo e destino permanecem disponíveis. |
+
+Registre por caso `PASS/FAIL`, viewport, método de entrada, evidência curta e correção. Um resultado apenas visualmente plausível, sem destino ou sem semântica coerente, permanece `FAIL`.
+
 ## Portão de aceite
 
 Execute os testes no navegador e marque cada item como passou/falhou com evidência curta. Uma inspeção de HTML ou CSS não substitui acionar o componente. Falhas bloqueiam a entrega como experiência concluída.

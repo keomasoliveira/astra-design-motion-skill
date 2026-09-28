@@ -16,15 +16,16 @@ O [SKILL.md](SKILL.md) traz o fluxo curto: entender o material real, definir uma
 | [Exemplos de motion](references/motion-examples.md) | Padrões estudados com gatilho, mecanismo e limites de adaptação |
 | [Sistema de motion](references/motion-system.md) | Menus, ícones, seções, 3D, interrupção e movimento reduzido |
 | [Personagem animado](references/character-motion.md) | Imagem raster mestre, reconstrução vetorial com comparação obrigatória de silhueta e partes, duas avaliações visuais ≥95/100, ficha, gestos narrativos, rig/quadros/vídeo, continuidade e medição no navegador |
+| [Ofício do personagem vetorial](references/character-vector-craft.md) | Desenhar forma, volume, olhos, mãos e pés; manter contornos e juntas coerentes em movimento; matriz de falhas, evidência por parte e prompts de correção/crítica |
 | [Render para comparação](scripts/render_svg_for_comparison.cjs) | Exporta o SVG editável em PNG RGBA no canvas da imagem mestre; usa `sharp` se instalado ou Chrome headless com Node 22+ |
-| [Medição de silhueta](scripts/measure_silhouette.py) | Compara máscaras alpha no mesmo canvas e gera evidência visual; seu IoU ≥95% é apenas uma etapa do gate, não a porcentagem de semelhança total |
+| [Medição de silhueta](scripts/measure_silhouette.py) | Compara máscaras alpha no mesmo canvas e gera evidência visual; `--region` adiciona recortes diagnósticos. Seu IoU ≥95% é apenas uma etapa do gate, não a porcentagem de semelhança total |
 | [Contrato de UX](references/ux-contract.md) | Estados e testes observáveis para controles e navegação |
 | [Motion kit](assets/motion-kit/) | Menu executável com três diagramas SVG, loops independentes do hover e controle de pausa |
 | [Exemplo do sapinho](assets/frog-example/) | Personagem original criado de imagem raster para SVG editável, com rig, microhistória, objeto sincronizado, controles e ficha de criação |
 | [Avaliação](evals/SCORING.md) | Casos e critérios para comparar o uso da skill com e sem ela |
 
 O motion kit funciona com HTML, CSS e JavaScript sem build. Consulte seu [README](assets/motion-kit/README.md) para abrir e testar.
-O exemplo animado do sapinho usa apenas arquivos estáticos e pode ser aberto em [assets/frog-example/index.html](assets/frog-example/index.html). Compare a [imagem mestre](assets/frog-example/concept-master.png), o [SVG reconstruído](assets/frog-example/premium-frog.svg) e a [ficha](assets/frog-example/character-sheet.svg) para inspecionar o processo antes da animação. O [README do exemplo](assets/frog-example/README.md) registra o estado do gate; a existência do SVG e da cena não significa aprovação visual.
+O exemplo animado do sapinho usa apenas arquivos estáticos e pode ser aberto em [assets/frog-example/index.html](assets/frog-example/index.html). Compare a [imagem mestre](assets/frog-example/concept-master.png), o [SVG reconstruído](assets/frog-example/premium-frog.svg) e a [ficha](assets/frog-example/character-sheet.svg) para inspecionar o processo antes da animação. O [README do exemplo](assets/frog-example/README.md) registra o gate ainda pendente; a existência do SVG e da cena demonstra um protótipo de rig, não aprovação visual do personagem.
 
 ## Instalação
 
