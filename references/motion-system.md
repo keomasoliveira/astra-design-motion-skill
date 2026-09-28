@@ -2,6 +2,8 @@
 
 Use esta referência quando a página tiver menu, sidebar, ícones animados, transições de seção ou cena 3D. O objetivo é produzir movimento com causa, estado final e saída previsíveis. A direção de arte define **como** cada efeito parece; as receitas abaixo definem **como fazê-lo funcionar**. Consulte os [exemplos estudados](motion-examples.md) e veja [a demonstração executável](../assets/motion-kit/) para adaptar um disclosure, diagramas animados e estados de ponteiro, teclado e toque. Ela é uma base de comportamento, não um layout a copiar.
 
+Quando a página incluir personagem animado por rig, quadros RGBA ou vídeo, leia também o [processo de personagem](character-motion.md) para continuidade de identidade, escolha do mecanismo, sincronização e medição visual. O loop de `requestAnimationFrame` abaixo agenda renderização; sua cadência isolada não mede quadros do personagem exibidos.
+
 ## Contrato de cada movimento
 
 Antes de animar, escreva `gatilho → estado inicial → propriedade alterada → estado final → interrupção → versão reduzida`. O conteúdo e a ação nunca podem depender do efeito terminar. O estado acessível deve acompanhar o estado lógico, mesmo durante uma transição visual. Não adicione motion só porque a biblioteca oferece um preset.

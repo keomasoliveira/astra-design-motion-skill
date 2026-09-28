@@ -15,6 +15,7 @@ O [SKILL.md](SKILL.md) traz o fluxo curto: entender o material real, definir uma
 | [Régua visual](references/quality-bar.md) | Direção de arte, composição e revisão de acabamento |
 | [Exemplos de motion](references/motion-examples.md) | Padrões estudados com gatilho, mecanismo e limites de adaptação |
 | [Sistema de motion](references/motion-system.md) | Menus, ícones, seções, 3D, interrupção e movimento reduzido |
+| [Personagem animado](references/character-motion.md) | Criação original quando faltar, gestos narrativos, quadros RGBA, rig/vídeo, continuidade, sincronização e medição no navegador |
 | [Contrato de UX](references/ux-contract.md) | Estados e testes observáveis para controles e navegação |
 | [Motion kit](assets/motion-kit/) | Menu executável com três diagramas SVG, loops independentes do hover e controle de pausa |
 | [Avaliação](evals/SCORING.md) | Casos e critérios para comparar o uso da skill com e sem ela |
