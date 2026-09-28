@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1800" role="img" aria-labelledby="sheet-title sheet-desc">
+  <title id="sheet-title">Sapinho das Ideias — ficha de desenvolvimento</title>
+  <desc id="sheet-desc">Comparação entre a arte raster principal e a reconstrução vetorial editável do mesmo sapinho, mais uma referência secundária de frente e perfil. Divergências e vistas ainda não aprovadas são identificadas.</desc>
+  <defs>
+    <linearGradient id="sheet-paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbf8ee"/><stop offset="1" stop-color="#efe9d9"/></linearGradient>
+    <linearGradient id="card-tint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffef7"/><stop offset="1" stop-color="#f3f4e8"/></linearGradient>
+    <clipPath id="views-clip"><rect x="80" y="1165" width="800" height="533" rx="19"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="1800" fill="url(#sheet-paper)"/>
+  <path d="M50 176H1550 M50 1048H1550 M50 1744H1550" stroke="#c8d1c0" stroke-width="2"/>
+  <text x="52" y="57" fill="#327263" font-size="19" font-family="Arial,sans-serif" font-weight="700" letter-spacing="4">ASTRA DESIGN MOTION · DESENVOLVIMENTO DE PERSONAGEM</text>
+  <text x="50" y="116" fill="#193d3a" font-size="58" font-family="Georgia,serif" font-weight="700">Sapinho das Ideias</text>
+  <text x="52" y="152" fill="#556e63" font-size="20" font-family="Arial,sans-serif">Da arte conceitual em RGBA ao desenho vetorial com partes animáveis</text>
+  <text x="1548" y="151" text-anchor="end" fill="#556e63" font-size="18" font-family="Arial,sans-serif">FICHA 02 / ESTUDO, NÃO TURNAROUND FINAL</text>
+
+  <g id="concept-panel">
+    <rect x="52" y="207" width="724" height="808" rx="28" fill="url(#card-tint)" stroke="#bfd1bc" stroke-width="2"/>
+    <rect x="77" y="231" width="225" height="33" rx="16.5" fill="#1c5a50"/>
+    <text x="189" y="254" text-anchor="middle" fill="#fffdf1" font-size="16" font-family="Arial,sans-serif" font-weight="700" letter-spacing="1">01 / CONCEPT MASTER</text>
+    <text x="747" y="254" text-anchor="end" fill="#607769" font-size="16" font-family="Arial,sans-serif">RASTER · RGBA</text>
+    <rect x="103" y="285" width="622" height="604" rx="24" fill="#f5f4e8"/>
+    <image href="concept-master.png" x="123" y="291" width="582" height="582" preserveAspectRatio="xMidYMid meet"/>
+    <path d="M78 909H750" stroke="#c9d6c4" stroke-width="2"/>
+    <text x="79" y="944" fill="#193d3a" font-size="22" font-family="Arial,sans-serif" font-weight="700">Identidade e atuação são decididas aqui.</text>
+    <text x="79" y="977" fill="#607769" font-size="17" font-family="Arial,sans-serif">Crista alta à esquerda · olho direito mais baixo · mão no queixo</text>
+  </g>
+
+  <g id="vector-panel">
+    <rect x="824" y="207" width="724" height="808" rx="28" fill="url(#card-tint)" stroke="#bfd1bc" stroke-width="2"/>
+    <rect x="850" y="231" width="227" height="33" rx="16.5" fill="#c96f55"/>
+    <text x="964" y="254" text-anchor="middle" fill="#fffdf1" font-size="16" font-family="Arial,sans-serif" font-weight="700" letter-spacing="1">02 / RECONSTRUÇÃO</text>
+    <text x="1518" y="254" text-anchor="end" fill="#607769" font-size="16" font-family="Arial,sans-serif">SVG · PARTES EDITÁVEIS</text>
+    <rect x="875" y="285" width="622" height="604" rx="24" fill="#f5f4e8"/>
+    <image href="premium-frog.svg" x="895" y="291" width="582" height="582" preserveAspectRatio="xMidYMid meet"/>
+    <path d="M850 909H1522" stroke="#c9d6c4" stroke-width="2"/>
+    <text x="851" y="944" fill="#193d3a" font-size="22" font-family="Arial,sans-serif" font-weight="700">Volumes e articulações reconstruídos.</text>
+    <text x="851" y="977" fill="#607769" font-size="17" font-family="Arial,sans-serif">Cabeça (505,372) · ombros (391,374) / (564,412)</text>
+    <text x="851" y="1000" fill="#607769" font-size="17" font-family="Arial,sans-serif">Quadris (452,658) / (577,660) · cotovelo esquerdo (360,475)</text>
+  </g>
+
+  <text x="52" y="1092" fill="#193d3a" font-size="29" font-family="Arial,sans-serif" font-weight="700">03 — Frente e perfil como guia secundário</text>
+  <text x="1548" y="1092" text-anchor="end" fill="#607769" font-size="17" font-family="Arial,sans-serif">REFERÊNCIA DE VOLUME · NÃO SUBSTITUI O CONCEPT MASTER</text>
+  <rect x="52" y="1115" width="1496" height="602" rx="28" fill="#f9f7ec" stroke="#bfd1bc" stroke-width="2"/>
+  <g clip-path="url(#views-clip)"><image href="concept-views.png" x="80" y="1165" width="800" height="533" preserveAspectRatio="xMidYMid meet"/></g>
+  <rect x="80" y="1134" width="194" height="33" rx="16.5" fill="#1c5a50"/>
+  <text x="177" y="1157" text-anchor="middle" fill="#fffdf1" font-size="16" font-family="Arial,sans-serif" font-weight="700">FRENTE + PERFIL</text>
+
+  <text x="921" y="1179" fill="#327263" font-size="18" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2">CONSTRUÇÃO QUE PERMANECE</text>
+  <text x="921" y="1220" fill="#193d3a" font-size="21" font-family="Arial,sans-serif">• Crista esquerda alta; direita longa e baixa.</text>
+  <text x="921" y="1255" fill="#193d3a" font-size="21" font-family="Arial,sans-serif">• Mandíbula e ventre marfim contínuos.</text>
+  <text x="921" y="1290" fill="#193d3a" font-size="21" font-family="Arial,sans-serif">• Tronco esguio e pés de três dedos.</text>
+  <path d="M921 1321H1519" stroke="#c8d1c0" stroke-width="2"/>
+  <text x="921" y="1358" fill="#c06750" font-size="18" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2">DIVERGÊNCIAS CONTROLADAS</text>
+  <text x="921" y="1396" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">Esta imagem mostra braços abaixados e varia</text>
+  <text x="921" y="1427" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">olhos e pintas. A pose, o olhar e a distribuição</text>
+  <text x="921" y="1458" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">de marcas da arte mestre têm prioridade.</text>
+  <path d="M921 1488H1519" stroke="#c8d1c0" stroke-width="2"/>
+  <text x="921" y="1525" fill="#327263" font-size="18" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2">VISTAS AINDA ABERTAS</text>
+  <text x="921" y="1563" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">O perfil é uma referência raster de volume.</text>
+  <text x="921" y="1594" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">Vetor de perfil, 3/4 e costas exigem desenho</text>
+  <text x="921" y="1625" fill="#193d3a" font-size="20" font-family="Arial,sans-serif">e revisão próprios antes de animar rotações.</text>
+
+  <text x="52" y="1780" fill="#536c61" font-size="16" font-family="Arial,sans-serif">Protótipo original · referências locais no diretório · critérios e limites em README.md</text>
+  <text x="1548" y="1780" text-anchor="end" fill="#536c61" font-size="16" font-family="Arial,sans-serif">Astra Design Motion Skill · 2026</text>
+</svg>

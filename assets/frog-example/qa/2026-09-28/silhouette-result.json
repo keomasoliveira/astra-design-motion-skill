@@ -1,0 +1,24 @@
+{
+  "iou": 0.950611,
+  "silhouette_iou_percent": 95.06,
+  "silhouette_minimum_percent": 95.0,
+  "silhouette_passed": true,
+  "overall_character_gate": "not_evaluated",
+  "alpha_threshold": 128,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "master_bbox": [
+    367,
+    32,
+    962,
+    1209
+  ],
+  "candidate_bbox": [
+    364,
+    29,
+    966,
+    1210
+  ]
+}
