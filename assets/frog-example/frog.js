@@ -355,7 +355,7 @@
     if (forearmLeft) forearmLeft.setAttribute("transform", `rotate(${wave.toFixed(2)} 360 475)`);
     if (handLeft) handLeft.setAttribute("transform", `rotate(${wave.toFixed(2)} 360 475)`);
     if (legLeft) legLeft.setAttribute("transform", `rotate(${(-legPush + hopTuck).toFixed(2)} 452 658)`);
-    if (legRight) legRight.setAttribute("transform", `rotate(${(legPush - hopTuck).toFixed(2)} 577 660)`);
+    if (legRight) legRight.setAttribute("transform", `translate(0 ${pose.bodyOffset.toFixed(2)}) rotate(${(legPush - hopTuck).toFixed(2)} 625 756)`);
     pupilLeft.setAttribute("transform", `translate(${dx.toFixed(2)} ${dy.toFixed(2)})`);
     pupilRight.setAttribute("transform", `translate(${dx.toFixed(2)} ${dy.toFixed(2)})`);
     lidLeft.setAttribute("opacity", blink.toFixed(3));
