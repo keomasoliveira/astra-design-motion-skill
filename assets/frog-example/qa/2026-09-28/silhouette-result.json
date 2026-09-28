@@ -1,6 +1,6 @@
 {
-  "iou": 0.951118,
-  "silhouette_iou_percent": 95.11,
+  "iou": 0.950886,
+  "silhouette_iou_percent": 95.09,
   "silhouette_minimum_percent": 95.0,
   "silhouette_passed": true,
   "overall_character_gate": "not_evaluated",
